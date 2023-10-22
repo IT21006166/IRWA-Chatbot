@@ -1,0 +1,58 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "query_templates": [
+        "Hi",
+        "Hello",
+        "Hey"
+      ],
+      "response_templates": [
+        "Hello!",
+        "Hi there!",
+        "Hey! How can I assist you today?"
+      ]
+    },
+    {
+      "tag": "product_inquiry",
+      "query_templates": [
+        "Tell me about [product_name]",
+        "What can you tell me about [product_name]?",
+        "I want to learn more about [product_name]",
+        "[product_name]"
+      ],
+      "response_templates": [
+        "Sure, {product_name} is a {type}. It's priced at {product_real_price} and currently in stock.",
+        "I'd be happy to help with {product_name}. The author of the book is {author}. The price is {product_real_price}."
+      ]
+    },
+      {
+      "tag": "author_inquiry",
+      "query_templates": [
+        "Tell me about [author]",
+        "What can you tell me about [author]?",
+        "What books have been published by the [author]?",
+        "[author]"
+      ],
+      "response_templates": [
+        "Sure, {author} has published {product_name}.",
+        "I'd be happy to help with. The books by the {author} are {product_name}."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "query_templates": [
+        "Goodbye",
+        "See you later",
+        "Bye"
+      ],
+      "response_templates": [
+        "Goodbye!",
+        "See you later!",
+        "Bye, have a great day!"
+      ]
+    }
+  ]
+}
+    
+
